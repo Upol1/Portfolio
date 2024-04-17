@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: cornsilk;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0f2336;
+}
+
+nav {
+  height: 110px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__inner {
+  width: 1240px;
+  height: 50px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__inner .nav__inner_list {
+  width: 410px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .nav__inner_list p {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav .nav__inner_list button {
+  width: 122px;
+  height: 35px;
+  background-color: #0f2336;
+  color: #fff;
+  border: 1px solid #0f2336;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+nav .nav__inner_list button:hover {
+  background-color: blueviolet; /* Изменение цвета фона при наведении */
+  border-color: #1a4067; /* Изменение цвета границы при наведении */
+  color: #fff; /* Изменение цвета текста при наведении */
+}
+
+.information p {
+  font-family: "Roboto";
+  font-size: 58px;
+  font-weight: 532px;
+  color: #000000;
+  margin: 50px;
+  margin-left: -100px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative; /* Обязательно для позиционирования вложенного элемента */
+}
+
+/* "outer_image", является внешней картинкой,  */
+/* "inner image" представляет собой внутреннюю картинку. */
+.inner-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container img {
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  max-width: 80%;
+  margin-top: auto;
+  position: relative; /* Добавляем позиционирование */
+  left: 700px; /* Устанавливаем смещение относительно исходной позиции */
+  animation-name: pulsing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulsing {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+}
+
+.images img {
+  max-width: 50px; /* Примерное значение. Измените по необходимости */
+  margin-right: 50px; /* Отступ справа */
+  animation-name: pulsing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes pulsing {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+.information2 {
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.information2 ul {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 70px;
+  margin-left: 150px;
+}
+
+h2 {
+  font-size: 40px;
+  color: #333;
+  margin-left: 150px;
+}
+
+.info .information2 {
+  margin-top: 40px;
+  margin-left: 220px;
+  text-align: left;
+  animation-name: pulsing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulsing {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+footer {
+  background-color: rgb(127, 184, 232); /* Цвет фона футера */
+  padding: 20px; /* Внутренний отступ футера */
+}
+
+.footer-content {
+  max-width: 800px; /* Максимальная ширина контента футера */
+  margin: 0 auto; /* Выравнивание контента по центру */
+}
+
+.footer-content p {
+  font-size: 20px; /* Размер шрифта для текста */
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.social-links {
+  list-style-type: none; /* Удаление маркеров списка */
+  padding: 0; /* Удаление внутренних отступов для списка */
+  margin-top: 10px; /* Верхний отступ для списка */
+  text-align: center;
+}
+
+.social-links li {
+  display: inline; /* Отображение элементов списка в строку */
+  margin-right: 10px; /* Правый отступ между элементами списка */
+}
+
+.social-links li:last-child {
+  margin-right: 0; /* Удаление правого отступа у последнего элемента списка */
+}
+
+.social-links li a {
+  text-decoration: none; /* Удаление подчеркивания ссылок */
+  color: #333; /* Цвет текста ссылок */
+}
+
+.social-links li a:hover {
+  color: blueviolet; /* Изменение цвета текста при наведении */
+}
+.footer-content p:hover {
+  color: blueviolet; /* Изменение цвета текста при наведении */
+}
+
+.footer-content {
+  transition: transform 0.3s ease; /* Добавляем плавную анимацию для свойства transform */
+}
+
+.footer-content:hover {
+  transform: scale(1.1); /* Увеличиваем размер блока при наведении */
+}
+
+.inner-image:hover {
+  animation: zoomIn 0.5s ease; /* Применяем анимацию zoomIn с длительностью 0.5 секунды и сглаживанием */
+}
+@media all and (max-width: 1024px) {
+  .nav__inner_list {
+    margin-left: 95px;
+  }
+
+  .nav__inner_list p {
+    margin-left: -250px;
+  }
+
+  .button.contact-button {
+    width: 100px;
+    right: 172px;
+    bottom: 10px;
+  }
+
+  .information p {
+    font-size: 40px;
+    margin-right: 20px;
+    text-align: center;
+    margin-left: 200px;
+    margin: 90px;
+  }
+
+  .container img {
+    width: 60%;
+    margin-right: -200px;
+    left: 70px;
+  }
+
+  .images img {
+    margin: 80px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .img {
+    width: 30%;
+    margin-right: 50px;
+  }
+}
