@@ -266,7 +266,7 @@ footer {
 }
 
 @media all and (max-width: 768px) {
-  .img {
+  .div {
     width: 30%;
     margin-right: 50px;
   }
